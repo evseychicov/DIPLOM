@@ -26,18 +26,18 @@
     </header>
 
     <div onclick="show('none')" id="gray"></div>
-    <form class="registration" id="form_reg" action="index.html" name="f1">
+    <form class="registration" id="form_reg" action="" name="f1">
             <div class="input">   
                 <h3>Регистрация</h3>
                 <h4>Email</h4>
-                <input type="text" placeholder="Введите Email" name="name1" class="input">
+                <input id="email" type="text" placeholder="Введите Email" name="name1" class="input">
                 <h4>Пароль</h4>
-                <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                <input id="password" type="password" placeholder="Введите пароль" name="name2" class="input">
                 <h4>Подтвердите пароль</h4>
-                <input type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
+                <input id="password2" type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
                 <h5 class="error">Такой e-mail уже зарегистрирован. Пароли не совпадают</h5>
             </div>
-            <button>Создать аккаунт</button>
+            <button id="btn-reg">Создать аккаунт</button>
             <h4 class="account">Уже есть аккаунт?</h4>
             <h3 onclick="entry('block')" class="entr">Войти</h3>
         </form>
@@ -125,7 +125,9 @@
 
 
 
-
+    <script src="js/handlebars.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/reg.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>
@@ -151,5 +153,8 @@
                 document.getElementById('gray_three').style.display = state;	
                 }
     </script>
+
+
+
 </body>
 </html>

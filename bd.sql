@@ -1,5 +1,5 @@
 CREATE TABLE users(
-  id_user INT PRIMARY KEY NOT NULL ,
+  id_user INT AUTO_INCREMENT PRIMARY KEY NOT NULL ,
   email VARCHAR(40) NOT NULL ,
   password VARCHAR(20) NOT NULL
 );
@@ -11,5 +11,6 @@ CREATE TABLE comments(
 );
 CREATE TABLE feedback(
   id_feedback INT PRIMARY KEY NOT NULL ,
-  feedback VARCHAR(13) NOT NULL
+  phone_number VARCHAR(13) NOT NULL,
+  name_feedback VARCHAR(15) NOT NULL
 );
