@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>PRAGMATIKA</title>
+</head>
+<body>
+    <header class="head" id="myTopnav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <a href="#" id="menu" class="icon">&#9776</a>
+            <a href="index_eng.html"><h3 class="general">General</h3></a>
+            <a href="services_eng.html"><h3>Services</h3></a>
+            <a href="portfolio_eng.html"><h3>Portfolio</h3></a>
+            <a href="#" onclick="show('block')"><button>Create account</button></a>
+            <a href="#" onclick="entry('block')"><div class="entry"><h2>Entry</h2></div></a>
+            <div class="user">
+                <ul class="mmenuu_user">
+                    <li><a href="#"><div class="flex_user">
+                        <h2>usermail</h2>
+                        <img src="img/arrow.png" alt="arrow">
+                        </div></a>
+                        <ul class="ssubmenuu_user">
+                            <li><a href="#" style="color: #0a1b4d">usermail@gmail.com</a></li>
+                            <li><a href="#" style="color: #f73e53">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="index.html"><div id="lang" style="cursor: pointer;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 60px;
+                height: auto;
+                border-radius: 8px;
+                margin-left: 20px;
+                background-color: blue" class="language">ru/en</div></a>
+        </div>
+    </header>
+
+    <div onclick="show('none')" id="gray"></div>
+    <form class="registration" id="form_reg" action="index.html" name="f1">
+            <div class="input">   
+                <h3>Registration</h3>
+                <h4>Email</h4>
+                <input type="text" placeholder="Enter Email" name="name1" class="input">
+                <h4>Password</h4>
+                <input type="password" placeholder="Enter password" name="name2" class="input">
+                <h4>Confirm the password</h4>
+                <input type="password" placeholder="Enter password again" name="email1" class="input">
+                <h5 class="error">This e-mail is already registered. Passwords do not match</h5>
+            </div>
+            <button>Create account</button>
+            <h4 class="account">Already have an account?</h4>
+            <h3 onclick="entry('block')" class="entr">Entry</h3>
+        </form>
+
+        <div onclick="entry('none')" id="gray_two"></div>
+        <form class="form_entry" id="form_entry" action="index.html" name="f1">
+                <div class="input_entry">   
+                    <h3>Entry</h3>
+                    <h4>Email</h4>
+                    <input type="text" placeholder="Enter Email" name="name1" class="input">
+                    <h4>Password</h4>
+                    <input type="password" placeholder="Enter password" name="name2" class="input">
+                    <label class="check">
+                            <input type="checkbox">
+                            <span class="pseudocheckbox"></span>
+                            <p>Remember me</p>
+                    </label>
+                    <h5 class="error_two">Incorrect email or password</h5>
+                </div>
+                <button>Entry</button>
+                <h4 class="account">No account yet?</h4>
+                <h3 onclick="show('block')" class="entr">Registration</h3>
+            </form>
+
+            <div onclick="feedback('none')" id="gray_three"></div>
+            <form class="feedback" id="form_feedback" action="index.html" name="f1">
+                <div class="input_feedback">   
+                    <h3>Feedback</h3>
+                    <h4>Name</h4>
+                    <input type="text" placeholder="Enter your name" name="name1" class="input">
+                    <h4>Phone number</h4>
+                    <input type="text" placeholder="+375 (29) 163-66-68" name="name2" class="input">
+                    <h5 class="error_three">Incorrect recorded phone number</h5>
+                </div>
+                <button>Send an application</button>
+            </form>
+
+    <section id="banner" class="banner">
+        <h1>The best team</h1>
+        <div></div>
+        <h3>
+            We develop websites of varying complexity, servers, mobile and desktop applications. We share the values ​​of our customers and responsibly approach all the tasks.</h3>
+        <button onclick="feedback('block')">Write to us!</button>
+    </section>
+    <section class="about">
+        <h3>About us</h3>
+        <div class="line"></div>
+        <h5>Pragmatika is a team of professionals in the field of development, testing, service support of software products, modernization and integration of business applications.
+            We love the work we do and strive for excellence in solving any problems.
+            Today, our team - more than 50 highly skilled professionals.</h5>
+        <div class="percent">
+            <div class="first_stat">
+                <h1>50%</h1>
+                <h4>new employees come to us with experience more than 2 years in IT</h4>
+            </div>
+            <div class="second_stat">
+                <h1>25</h1>
+                <h4>average age of our company employees</h4>
+            </div>
+            <div class="third_stat">
+                <h1>100%</h1>
+                <h4>satisfied customers throughout Belarus and the CIS countries</h4>
+            </div>
+            <div class="fourth_stat">
+                <h1>30%</h1>
+                <h4>employees undergo annual trainings</h4>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="technology">
+            <h3>We use languages</h3>
+            <div class="line"></div>
+            <div class="languages">
+                <img src="img/1200px-PHP-logo.svg.png" alt="">
+                <img src="img/HTML5_CSS_JavaScript.png" alt="">
+                <img src="img/d731883c64dd45baa761c17a53f42759.png" alt="">
+                <img src="img/1_XaGxIa_JuHc8YTR5Znv6tg.png" alt="">
+                <img src="img/postgresql-cover.jpg" alt="">
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    function show(state)
+                {
+                document.getElementById('form_reg').style.display = state;	
+                document.getElementById('gray').style.display = state;
+                document.getElementById('form_entry').style.display = "none";	
+                document.getElementById('gray_two').style.display = "none"; 			
+                }	
+                function entry(state)
+                {
+                document.getElementById('form_entry').style.display = state;	
+                document.getElementById('gray_two').style.display = state; 
+                document.getElementById('form_reg').style.display = "none";	
+                document.getElementById('gray').style.display = "none";	
+                document.getElementById('form_recover').style.display = "none";	
+                document.getElementById('gray_three').style.display = "none"; 	
+                }
+                function feedback(state)
+                {
+                document.getElementById('form_feedback').style.display = state;	
+                document.getElementById('gray_three').style.display = state;	
+                }
+    </script>
+</body>
+</html>

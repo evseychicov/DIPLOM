@@ -1,0 +1,148 @@
+.about{
+    background-color: #f5f0f0;
+    margin-top: 1%;
+}
+.adaptive_site{
+    text-align: center;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.about h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.adaptive_site img{
+    width: 120px;
+    height: auto;
+}
+.adaptive_site h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.adaptive_site h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.kind_adaptive{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.kind_adaptive img{
+    width: 60px;
+    height: auto;
+}
+.kind_adaptive h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.kind_adaptive div{
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.last{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:800px){
+    .kind_adaptive{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .kind_adaptive div{
+        width: 40%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width:610px){
+    .about h3 {
+        padding-top: 15px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .line {
+        margin-top: 15px;
+        width: 80px;
+        height: 3px;
+    }
+    .about h5 {
+        margin-top: 15px;
+        line-height: 25px;
+        width: 90%;
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .adaptive_site{
+        text-align: center;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .adaptive_site h2{
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .adaptive_site h3{
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .adaptive_site img{
+        width: 80px;
+        height: auto;
+    }
+    .kind_adaptive{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .kind_adaptive img{
+        width: 40px;
+        height: auto;
+    }
+    .kind_adaptive h4{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .kind_adaptive div{
+        width: 40%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+@media screen and (max-width:470px){
+    .kind_adaptive{
+        margin-top: 15px;
+        display: block;
+    }
+    .kind_adaptive div{
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .last{
+        margin-bottom: 2%;
+    }
+}

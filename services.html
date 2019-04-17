@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
+    <title>PRAGMATIKA</title>
+</head>
+<body>
+    <header class="head" id="myTopnav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <a href="#" id="menu" class="icon">&#9776</a>
+            <a href="index.html"><h3 class="general">Главная</h3></a>
+            <a href="services.html"><h3>Услуги</h3></a>
+            <a href="portfolio.html"><h3>Портфолио</h3></a>
+            <a href="#" onclick="show('block')"><button>Создать аккаунт</button></a>
+            <a href="#" onclick="entry('block')"><div class="entry"><h2>Войти</h2></div></a>
+            <a href="#"><div class="user"><h2>usermail</h2>
+            <img src="img/arrow.png" alt="arrow"></div></a>
+            <a href="services_eng.html"><div id="lang" class="language">ru/en</div></a>
+        </div>
+    </header>
+
+    <div onclick="show('none')" id="gray"></div>
+    <form class="registration" id="form_reg" action="index.html" name="f1">
+            <div class="input">   
+                <h3>Регистрация</h3>
+                <h4>Email</h4>
+                <input type="text" placeholder="Введите Email" name="name1" class="input">
+                <h4>Пароль</h4>
+                <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                <h4>Подтвердите пароль</h4>
+                <input type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
+                <h5 class="error">Такой e-mail уже зарегистрирован. Пароли не совпадают</h5>
+            </div>
+            <button>Создать аккаунт</button>
+            <h4 class="account">Уже есть аккаунт?</h4>
+            <h3 onclick="entry('block')" class="entr">Войти</h3>
+        </form>
+
+        <div onclick="entry('none')" id="gray_two"></div>
+        <form class="form_entry" id="form_entry" action="index.html" name="f1">
+                <div class="input_entry">   
+                    <h3>Вход</h3>
+                    <h4>Email</h4>
+                    <input type="text" placeholder="Введите Email" name="name1" class="input">
+                    <h4>Пароль</h4>
+                    <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                    <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
+                    <label class="check">
+                            <input type="checkbox">
+                            <span class="pseudocheckbox"></span>
+                            <p>Запомнить меня</p>
+                    </label>
+                    <h5 class="error_two">Неверный email или пароль</h5>
+                </div>
+                <button>Войти</button>
+                <h4 class="account">Еще нет аккаунта?</h4>
+                <h3 onclick="show('block')" class="entr">Зарегистрироваться</h3>
+            </form>
+
+            
+
+    
+        <section class="about">
+        <h3>Услуги</h3>
+        <div class="line"></div>
+        <h5>Мы помогаем компаниям продавать товары и услуги в интернете. Наша работа строится на комплексном подходе и отсутствии шаблонных решений — каждый проект индивидуален и создается с учетом специфики вашего бизнеса. Готовые продукты сопровождаем и поддерживаем.</h5>
+        </section>
+        <section class="adaptive_site">
+            <img src="img/icons8-monitor-100.png" alt="">
+            <h2>Адаптивные сайты</h2>
+            <h3>Мы разрабатываем, сопровождаем и развиваем сайты. Уделяем большое внимание проектированию и дизайну, делая сайты максимально удобными и информативными для пользователя. Учитываем требования к поисковому продвижению.</h3>
+            <div class="kind_adaptive">
+                <div>
+                    <img src="img/icons8-rocket-50.png" alt="">
+                    <h4>Landing Page</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-briefcase-50.png" alt="">
+                    <h4>Корпоративные сайты</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-shopping-cart-50.png" alt="">
+                    <h4>Интернет-магазины</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-web-50.png" alt="">
+                    <h4>Веб-приложения</h4>
+                </div>
+            </div>
+        </section>
+        <section class="adaptive_site">
+                <img src="img/icons8-mobile-100.png" alt="">
+                <h2>Мобильные приложения</h2>
+                <h3>Проектируем, разрабатываем и продвигаем мобильные приложения под платформы iOS и Android. Учитываем пользовательский опыт и последние тенденции в разработке приложений.</h3>
+                <div class="kind_adaptive">
+                    <div>
+                        <img src="img/icons8-android-os-50.png" alt="">
+                        <h4>Android</h4>
+                    </div>
+                    <div>
+                        <img src="img/icons8-apple-logo-50.png" alt="">
+                        <h4>Ios</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="adaptive_site last">
+                    <img src="img/icons8-commercial-100.png" alt="">
+                    <h2>Реклама и продвижение</h2>
+                    <h3>Привлекаем клиентов по различным каналам трафика. Следим за эффективностью компании, улучшаем отдачу от рекламы, снижая затраты и увеличивая переходы и клики. Используем инструменты как привлечения, так и удержания пользователей.</h3>
+                    <div class="kind_adaptive">
+                        <div>
+                            <img src="img/icons8-open-in-browser-50.png" alt="">
+                            <h4>Контекстная реклама</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-website-50.png" alt="">
+                            <h4>Продвижение сайта (SEO)</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-goal-50.png" alt="">
+                            <h4>Таргетированная реклама</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-secured-letter-50.png" alt="">
+                            <h4>E-mail маркетинг</h4>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    function show(state)
+                {
+                document.getElementById('form_reg').style.display = state;	
+                document.getElementById('gray').style.display = state;
+                document.getElementById('form_entry').style.display = "none";	
+                document.getElementById('gray_two').style.display = "none"; 			
+                }	
+                function entry(state)
+                {
+                document.getElementById('form_entry').style.display = state;	
+                document.getElementById('gray_two').style.display = state; 
+                document.getElementById('form_reg').style.display = "none";	
+                document.getElementById('gray').style.display = "none";	
+                document.getElementById('form_recover').style.display = "none";	
+                document.getElementById('gray_three').style.display = "none"; 	
+                }
+    </script>
+</body>
+</html>

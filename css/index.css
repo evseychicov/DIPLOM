@@ -1,0 +1,958 @@
+@font-face {
+    font-family: Helvetica; /* Имя шрифта */
+    src: url(fonts/HelveticaNeueCyr-Medium.otf); /* Путь к файлу со шрифтом */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    color: black;
+    font-family: Helvetica;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f5f0f0;
+}
+
+/* переключатель */
+.language{
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+    background-color: #D82525;
+}
+
+
+/* шапка */
+.head{
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 70px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    border-bottom: 1px solid black;
+    font-family: Helvetica;
+}
+.logo img{
+    padding-top: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu h3{
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.menu img{
+    padding-left: 7px;
+    width: 17px;
+    height: 17px;
+}
+.menu button{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 160px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    background-color: #D82525;
+    border: 2px solid #D82525;
+    font-family: Helvetica;
+}
+.menu button:hover{
+    color: #D82525;
+    background-color: white;
+}
+.entry h2{
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.entry h2:hover{
+    color: #D82525;
+}
+.user{
+    cursor: pointer;
+    display: block;
+    display: none;
+}
+.user h2{
+    padding-top: 0px;
+    padding-left: 17px;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu h3:hover{
+    color: #D82525;
+}
+.icon{
+    display: none;
+}
+/* список пользователя */
+.flex_user{
+    display: flex;
+}
+ul.ssubmenuu_user {
+    position: absolute;
+    width: 180px;
+    top: 45px;
+    right: 13.5%;
+    z-index: 150;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+ul.ssubmenuu_user > li {
+    /* Блочное расположение элементов*/
+    display: block;
+    border-radius: 10px;
+}
+ul.ssubmenuu_user > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 5px;
+    /* Задаю цвет. */
+    color: #0a1b4d;
+    /* Еще цвет. */
+    background-color: white;
+    border-radius: 10px;
+}
+ul.ssubmenuu_user > li > a:hover {
+    opacity: 0.5;
+}
+ul.mmenuu_user > li{
+    list-style-type: none;
+}
+ul.mmenuu_user > li:hover > ul.ssubmenuu_user {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+
+/* Форма регистрации */
+#gray{
+    opacity: 0.8; 
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75); 
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0; 
+    display: none; 
+    z-index:100; 
+    overflow: auto; 
+} 
+.registration{
+    margin: 70px auto;
+    z-index: 150;
+    width: 328px;
+    height: 480px;
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div.input{
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 420px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Helvetica;
+}
+.input h3{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+.input h4{
+    padding-top: 24px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.input input{
+    border: none;
+    height: 40px;
+    width: 100%;
+    color: #D82525;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #0a1b4d;
+}
+.error{
+    display: none;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #D82525;
+    font-family: Helvetica;
+}
+.inpt input:-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.45);
+}
+.registration button{
+    cursor: pointer;
+    margin-top: -20px; 
+    width: 328px;
+    height: 60px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #D82525;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: Helvetica;
+}
+.registration button:hover{
+    color: #D82525;
+    background-color: #e4e4e4;
+}
+.account{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.75;
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+    font-family: Helvetica;
+}
+.entr{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    font-family: Helvetica;
+}
+.entr:hover{
+    color: #D82525;
+}
+/* Форма входа */
+#gray_two{
+    opacity: 0.8; 
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75); 
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0; 
+    display: none; 
+    z-index:100; 
+    overflow: auto; 
+} 
+.form_entry{
+    margin: 70px auto;
+    z-index: 150;
+    width: 328px;
+    height: 480px;
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.input_error p{
+    cursor: pointer;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Helvetica;
+    color: rgba(0, 0, 0, 0.55);
+}
+.error_two{
+    display: none;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #D82525;
+}
+div.input_entry{
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 380px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Helvetica;
+}
+.input_entry h3{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+.input_entry h4{
+    padding-top: 24px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.input_entry input{
+    border: none;
+    height: 40px;
+    width: 100%;
+    color: #D82525;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #0a1b4d;
+}
+.input_entry p{
+    cursor: pointer;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+}
+.input_entry p:hover{
+    color: #D82525;
+}
+
+.check input{
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    margin-top: 24px;
+    font-family: Helvetica;
+    border: 1px solid #0a1b4d;
+    background-color: #ffffff;
+}
+
+input[type=checkbox] { display: none; }
+
+.pseudocheckbox::before {
+    cursor: pointer;
+    content: "\00A0";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24px; 
+    height: 24px;
+    background-color: white;
+    border: 1px solid #0a1b4d;
+    border-radius: 7px;
+    vertical-align: baseline;
+    
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    font-family: Helvetica;
+}
+input[type=checkbox]:checked + .pseudocheckbox::before { content: "\2713"; }
+.check{
+    display: flex;
+    margin-top: 27px;
+}
+.check p{
+    margin-left: 12px;
+    margin-top: 3px;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input_entry input:-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.45);
+}
+.form_entry button{
+    cursor: pointer;
+    margin-top: -20px; 
+    width: 328px;
+    height: 60px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #D82525;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.form_entry button:hover{
+    color: #D82525;
+    background-color: #e4e4e4;
+}
+
+/* Форма обратной связи */
+#gray_three{
+    opacity: 0.8; 
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75); 
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0; 
+    display: none; 
+    z-index:100; 
+    overflow: auto; 
+} 
+.feedback{
+    margin: 70px auto;
+    z-index: 150;
+    width: 328px;
+    height: 290px;
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div.input_feedback{
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 330px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Helvetica;
+}
+.input_feedback h3{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+.input_feedback h4{
+    padding-top: 24px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.input_feedback input{
+    border: none;
+    height: 40px;
+    width: 100%;
+    color: #D82525;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #0a1b4d;
+}
+.error_three{
+    display: none;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #D82525;
+    font-family: Helvetica;
+}
+.inpt input:-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.45);
+}
+.feedback button{
+    cursor: pointer;
+    margin-top: -20px; 
+    width: 328px;
+    height: 60px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #D82525;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: Helvetica;
+}
+.feedback button:hover{
+    color: #D82525;
+    background-color: #e4e4e4;
+}
+
+/* баннер */
+.banner{
+    background-image: url(../img/photo-1522071820081-009f0129c71c2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    font-family: Helvetica;
+    padding-left: 10%;
+    padding-top: 20%;
+}
+.banner h1{
+    color: white;
+    font-size: 44px;
+}
+.banner h3{
+    padding-top: 30px;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.banner div{
+    margin-top: 30px;
+    width: 100px;
+    height: 5px;
+    background-color: #D82525;
+}
+.banner button{
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border: 2px solid #D82525;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Helvetica;
+    background-color: #D82525;
+    cursor: pointer;
+}
+.banner button:hover{
+    background-color: white;
+    color: #D82525;
+}
+.about{
+    text-align: center;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.about h3{
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 100px;
+    height: 5px;
+    background-color: #D82525;
+}
+.about h5{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    line-height: 25px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.percent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+}
+.percent div{
+    width: 45%;
+    margin-top: 20px;
+}
+.percent h1{
+    color: #D82525;
+    font-size: 50px;
+    font-weight: 500;
+}
+.percent h4{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* технологии */
+.technology{
+    text-align: center;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.technology h3{
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 100px;
+    height: 5px;
+    background-color: #D82525;
+}
+.languages{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+.languages img{
+    height: 120px;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.languages img:nth-child(3){
+    height: 100px;
+    width: auto;
+    margin-top: 5px;
+}
+.languages img:nth-child(4){
+    margin-top: 30px;
+}
+.languages img:nth-child(5){
+    margin-top: 30px;
+}
+
+
+/* английский сайт */
+.english{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:930px){
+    .head{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .banner{
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .banner h3{
+        width: 100%;
+    }
+    .about{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .percent{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .technology{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width:780px){
+    ul.ssubmenuu_user {
+        position: absolute;
+        width: 180px;
+        top: 35px;
+        right: 0%;
+    }
+    .language{
+        top: 41.5%;
+        right: 5%;
+        position: absolute;
+    }
+    .menu a{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .icon{
+        font-size: 25px;
+        padding-top: 18px;
+        color: #0a1b4d;
+    }
+    .menu{
+        display: block;
+        float: right;
+    }
+    .menu h3{
+        float: right;
+        cursor: pointer;
+        padding-left: 100px;
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .general{
+        margin-left: 20px;
+    }
+    .user{
+        padding-top: 20px;
+        float: right;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        display: none;
+    }
+    .user h2{
+        float: right;
+        padding-top: 0px;
+        padding-left: 0px;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .user img{
+        margin: 0px;
+        padding: 0px;
+        padding-left: 7px;
+    }
+    .head{
+        height: 70px;
+        display: block;
+    }
+    .logo{
+        float: left;
+    }
+    .menu button{
+        margin-top: 20px;
+        float: right;
+    }
+    .entry h2{
+        padding-top: 20px;
+        float: right;
+    }
+    .head.responsive{
+        display: block;
+        height: 325px;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+    }
+    .head.responsive a{
+        display: block;
+    }
+    .head.responsive a.icon{
+        float: right;
+    }
+    .head.responsive div.onoffswitch{
+        display: block;
+        float: right;
+        margin-top: 55px;
+        margin-right: -75px;
+    }
+}
+@media screen and (max-width:610px){
+    .banner{
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h3{
+        font-size: 16px;
+        padding-top: 15px;
+    }
+    .banner div{
+        height: 3px;
+        width: 80px;
+        margin-top: 15px;
+    }
+    .banner button{
+        width: 150px;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .about h3 {
+        padding-top: 15px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .line {
+        margin-top: 15px;
+        width: 80px;
+        height: 3px;
+    }
+    .about h5 {
+        margin-top: 15px;
+        line-height: 25px;
+        width: 90%;
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .percent{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 20px;
+    }
+    .percent div{
+        width: 45%;
+        margin-top: 15px;
+    }
+    .percent h1 {
+        color: #D82525;
+        font-size: 30px;
+    }
+    .percent h4 {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .technology h3 {
+        padding-top: 15px;
+        font-size: 30px;
+    }
+    .languages {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2%;
+        padding-bottom: 15px;
+    }
+    .languages img {
+        height: 60px;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .languages img:nth-child(3) {
+        height: 100px;
+        width: auto;
+        margin-top: -23px;
+    }
+}
+@media screen and (max-width:543px){
+    .languages img:nth-child(3) {
+        height: 100px;
+        width: auto;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:480px){
+    .banner{
+        background-size: auto; 
+    }
+}
+@media screen and (max-width:380px){
+    .registration{
+        margin: 70px auto;
+        z-index: 150;
+        width: 91%;
+        height: 480px;
+        position: fixed;
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .registration button{
+        margin-top: -20px; 
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+    .form_entry{
+        margin: 70px auto;
+        z-index: 150;
+        width: 91%;
+        height: 480px;
+        position: fixed;
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .form_entry button{
+        cursor: pointer;
+        margin-top: -20px; 
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+    .feedback{
+        margin: 70px auto;
+        z-index: 150;
+        width: 91%;
+        height: 300px;
+        position: fixed;
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .feedback button{
+        cursor: pointer;
+        margin-top: -20px; 
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+}
+@media screen and (max-width:330px){
+    .menu{
+        width: 50%;
+    }
+    .icon{
+        padding-top: 18px;
+        float: right;
+    }
+}

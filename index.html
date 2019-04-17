@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>PRAGMATIKA</title>
+</head>
+<body>
+    <header class="head" id="myTopnav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <a href="#" id="menu" class="icon">&#9776</a>
+            <a href="index.html"><h3 class="general">Главная</h3></a>
+            <a href="services.html"><h3>Услуги</h3></a>
+            <a href="portfolio.html"><h3>Портфолио</h3></a>
+            <a href="#" onclick="show('block')"><button>Создать аккаунт</button></a>
+            <a href="#" onclick="entry('block')"><div class="entry"><h2>Войти</h2></div></a>
+            <a href="#"><div class="user"><h2>usermail</h2>
+            <img src="img/arrow.png" alt="arrow"></div></a>
+            <a href="index_eng.html"><div id="lang" class="language">ru/en</div></a>
+        </div>
+    </header>
+
+    <div onclick="show('none')" id="gray"></div>
+    <form class="registration" id="form_reg" action="index.html" name="f1">
+            <div class="input">   
+                <h3>Регистрация</h3>
+                <h4>Email</h4>
+                <input type="text" placeholder="Введите Email" name="name1" class="input">
+                <h4>Пароль</h4>
+                <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                <h4>Подтвердите пароль</h4>
+                <input type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
+                <h5 class="error">Такой e-mail уже зарегистрирован. Пароли не совпадают</h5>
+            </div>
+            <button>Создать аккаунт</button>
+            <h4 class="account">Уже есть аккаунт?</h4>
+            <h3 onclick="entry('block')" class="entr">Войти</h3>
+        </form>
+
+        <div onclick="entry('none')" id="gray_two"></div>
+        <form class="form_entry" id="form_entry" action="index.html" name="f1">
+                <div class="input_entry">   
+                    <h3>Вход</h3>
+                    <h4>Email</h4>
+                    <input type="text" placeholder="Введите Email" name="name1" class="input">
+                    <h4>Пароль</h4>
+                    <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                    <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
+                    <label class="check">
+                            <input type="checkbox">
+                            <span class="pseudocheckbox"></span>
+                            <p>Запомнить меня</p>
+                    </label>
+                    <h5 class="error_two">Неверный email или пароль</h5>
+                </div>
+                <button>Войти</button>
+                <h4 class="account">Еще нет аккаунта?</h4>
+                <h3 onclick="show('block')" class="entr">Зарегистрироваться</h3>
+            </form>
+
+            <div onclick="feedback('none')" id="gray_three"></div>
+            <form class="feedback" id="form_feedback" action="index.html" name="f1">
+                <div class="input_feedback">   
+                    <h3>Обратная связь</h3>
+                    <h4>Имя</h4>
+                    <input type="text" placeholder="Введите ваше Имя" name="name1" class="input">
+                    <h4>Номер телефона</h4>
+                    <input type="text" placeholder="+375 (29) 163-66-68" name="name2" class="input">
+                    <h5 class="error_three">Неправильно записан номер телефона</h5>
+                </div>
+                <button>Отправить заявку</button>
+            </form>
+
+    <section id="banner" class="banner">
+        <h1>Лучшая команда</h1>
+        <div></div>
+        <h3>Мы занимаемся разработкой сайтов различной сложности, серверов, мобильных и десктопных приложений. Мы разделяем ценности наших клиентов и ответственно подходим ко всем поставленным задачам.</h3>
+        <button onclick="feedback('block')">Написать нам!</button>
+    </section>
+    <section class="about">
+        <h3>О нас</h3>
+        <div class="line"></div>
+        <h5>Pragmatika – это команда профессионалов в сфере разработки, тестирования, сервисной поддержки программных продуктов, модернизации и интеграции бизнес-приложений. 
+            Мы любим дело, которым занимаемся, и стремимся к совершенству в решении любых задач.
+            Сегодня наша команда – более 50 высококлассных специалистов.</h5>
+        <div class="percent">
+            <div class="first_stat">
+                <h1>50%</h1>
+                <h4>новых сотрудников приходят к нам с опытом больше 2ух лет в IT</h4>
+            </div>
+            <div class="second_stat">
+                <h1>25</h1>
+                <h4>средний возраст сотрудников нашей компании</h4>
+            </div>
+            <div class="third_stat">
+                <h1>100%</h1>
+                <h4>довольных клиентов по всей Беларуси и странам СНГ</h4>
+            </div>
+            <div class="fourth_stat">
+                <h1>30%</h1>
+                <h4>сотрудников проходят ежегодные тренинги</h4>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="technology">
+            <h3>Мы используем языки</h3>
+            <div class="line"></div>
+            <div class="languages">
+                <img src="img/1200px-PHP-logo.svg.png" alt="">
+                <img src="img/HTML5_CSS_JavaScript.png" alt="">
+                <img src="img/d731883c64dd45baa761c17a53f42759.png" alt="">
+                <img src="img/1_XaGxIa_JuHc8YTR5Znv6tg.png" alt="">
+                <img src="img/postgresql-cover.jpg" alt="">
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    function show(state)
+                {
+                document.getElementById('form_reg').style.display = state;	
+                document.getElementById('gray').style.display = state;
+                document.getElementById('form_entry').style.display = "none";	
+                document.getElementById('gray_two').style.display = "none"; 			
+                }	
+                function entry(state)
+                {
+                document.getElementById('form_entry').style.display = state;	
+                document.getElementById('gray_two').style.display = state; 
+                document.getElementById('form_reg').style.display = "none";	
+                document.getElementById('gray').style.display = "none";	
+                document.getElementById('form_recover').style.display = "none";	
+                document.getElementById('gray_three').style.display = "none"; 	
+                }
+                function feedback(state)
+                {
+                document.getElementById('form_feedback').style.display = state;	
+                document.getElementById('gray_three').style.display = state;	
+                }
+    </script>
+</body>
+</html>

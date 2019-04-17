@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
+    <title>PRAGMATIKA</title>
+</head>
+<body>
+    <header class="head" id="myTopnav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <a href="#" id="menu" class="icon">&#9776</a>
+            <a href="index_eng.html"><h3 class="general">General</h3></a>
+            <a href="services_eng.html"><h3>Services</h3></a>
+            <a href="portfolio_eng.html"><h3>Portfolio</h3></a>
+            <a href="#" onclick="show('block')"><button>Create account</button></a>
+            <a href="#" onclick="entry('block')"><div class="entry"><h2>Entry</h2></div></a>
+            <div class="user">
+                <ul class="mmenuu_user">
+                    <li><a href="#"><div class="flex_user">
+                        <h2>usermail</h2>
+                        <img src="img/arrow.png" alt="arrow">
+                        </div></a>
+                        <ul class="ssubmenuu_user">
+                            <li><a href="#" style="color: #0a1b4d">usermail@gmail.com</a></li>
+                            <li><a href="#" style="color: #f73e53">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="services.html"><div id="lang" style="cursor: pointer;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 60px;
+                height: auto;
+                border-radius: 8px;
+                margin-left: 20px;
+                background-color: blue" class="language">ru/en</div></a>
+        </div>
+    </header>
+
+    <div onclick="show('none')" id="gray"></div>
+    <form class="registration" id="form_reg" action="index.html" name="f1">
+            <div class="input">   
+                <h3>Registration</h3>
+                <h4>Email</h4>
+                <input type="text" placeholder="Enter Email" name="name1" class="input">
+                <h4>Password</h4>
+                <input type="password" placeholder="Enter password" name="name2" class="input">
+                <h4>Confirm the password</h4>
+                <input type="password" placeholder="Enter password again" name="email1" class="input">
+                <h5 class="error">This e-mail is already registered. Passwords do not match</h5>
+            </div>
+            <button>Create account</button>
+            <h4 class="account">Already have an account?</h4>
+            <h3 onclick="entry('block')" class="entr">Entry</h3>
+        </form>
+
+        <div onclick="entry('none')" id="gray_two"></div>
+        <form class="form_entry" id="form_entry" action="index.html" name="f1">
+                <div class="input_entry">   
+                    <h3>Entry</h3>
+                    <h4>Email</h4>
+                    <input type="text" placeholder="Enter Email" name="name1" class="input">
+                    <h4>Password</h4>
+                    <input type="password" placeholder="Enter password" name="name2" class="input">
+                    <label class="check">
+                            <input type="checkbox">
+                            <span class="pseudocheckbox"></span>
+                            <p>Remember me</p>
+                    </label>
+                    <h5 class="error_two">Incorrect email or password</h5>
+                </div>
+                <button>Entry</button>
+                <h4 class="account">No account yet?</h4>
+                <h3 onclick="show('block')" class="entr">Registration</h3>
+            </form>
+
+
+
+            <section class="about">
+        <h3>Services</h3>
+        <div class="line"></div>
+        <h5>
+            We help companies sell products and services on the Internet. Our work is based on an integrated approach and the absence of template solutions - each project is individual and is created taking into account the specifics of your business. Finished products accompany and support.</h5>
+        </section>
+        <section class="adaptive_site">
+            <img src="img/icons8-monitor-100.png" alt="">
+            <h2>Responsive sites</h2>
+            <h3>We develop, maintain and develop websites. We pay great attention to design and design, making websites as convenient and informative for the user as possible. We take into account the requirements for search engine promotion.</h3>
+            <div class="kind_adaptive">
+                <div>
+                    <img src="img/icons8-rocket-50.png" alt="">
+                    <h4>Landing Page</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-briefcase-50.png" alt="">
+                    <h4>Corporate sites</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-shopping-cart-50.png" alt="">
+                    <h4>Online stores</h4>
+                </div>
+                <div>
+                    <img src="img/icons8-web-50.png" alt="">
+                    <h4>Web-applications</h4>
+                </div>
+            </div>
+        </section>
+        <section class="adaptive_site">
+                <img src="img/icons8-mobile-100.png" alt="">
+                <h2>Mobile applications</h2>
+                <h3>We design, develop and promote mobile applications for iOS and Android platforms. We take into account user experience and the latest trends in application development.</h3>
+                <div class="kind_adaptive">
+                    <div>
+                        <img src="img/icons8-android-os-50.png" alt="">
+                        <h4>Android</h4>
+                    </div>
+                    <div>
+                        <img src="img/icons8-apple-logo-50.png" alt="">
+                        <h4>Ios</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="adaptive_site last">
+                    <img src="img/icons8-commercial-100.png" alt="">
+                    <h2>Advertising and promotion</h2>
+                    <h3>We attract customers through various channels of traffic. We monitor the company's efficiency, improve the return on advertising, reducing costs and increasing conversions and clicks. We use the tools of both attracting and retaining users.</h3>
+                    <div class="kind_adaptive">
+                        <div>
+                            <img src="img/icons8-open-in-browser-50.png" alt="">
+                            <h4>Contextual advertising</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-website-50.png" alt="">
+                            <h4>Website promotion (SEO)</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-goal-50.png" alt="">
+                            <h4>Targeted Advertising</h4>
+                        </div>
+                        <div>
+                            <img src="img/icons8-secured-letter-50.png" alt="">
+                            <h4>Email marketing</h4>
+                        </div>
+                    </div>
+                </section>
+    
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    function show(state)
+                {
+                document.getElementById('form_reg').style.display = state;	
+                document.getElementById('gray').style.display = state;
+                document.getElementById('form_entry').style.display = "none";	
+                document.getElementById('gray_two').style.display = "none"; 			
+                }	
+                function entry(state)
+                {
+                document.getElementById('form_entry').style.display = state;	
+                document.getElementById('gray_two').style.display = state; 
+                document.getElementById('form_reg').style.display = "none";	
+                document.getElementById('gray').style.display = "none";	
+                document.getElementById('form_recover').style.display = "none";	
+                document.getElementById('gray_three').style.display = "none"; 	
+                }
+    </script>
+</body>
+</html>
