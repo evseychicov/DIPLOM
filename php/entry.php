@@ -12,7 +12,7 @@ if(isset($_POST['email']) && isset($_POST['pass'])){
 	$result = mysqli_query($db, $query);
 	$count = mysqli_num_rows($result);
 		if($count == 1){
-			setcookie("email", $email, time()+3600);
+			// setcookie("email", $email, time()+3600);
 			// $_SESSION['email'] = $email;
 			echo 1;
 		}

@@ -15,7 +15,7 @@ $("#btn-entry").on("click", function(e) {
                 switch (msg) {
                     case "1":
                     // localStorage.setItem("Email",email);
-                    // document.cookie = "Email=" + email + "";
+                    document.cookie = "Email=" + email + "";
                     $(".create_account").css("display", "none");
                     $(".entry").css("display", "none");
                     $("#gray_two").css("display", "none");
