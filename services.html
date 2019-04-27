@@ -18,7 +18,7 @@
             <a href="index.html"><h3 class="general">Главная</h3></a>
             <a href="services.html"><h3>Услуги</h3></a>
             <a href="portfolio.html"><h3>Портфолио</h3></a>
-            <a href="#" onclick="show('block')"><button>Создать аккаунт</button></a>
+            <a href="#" onclick="show('block')"><button class="create_account">Создать аккаунт</button></a>
             <a href="#" onclick="entry('block')"><div class="entry"><h2>Войти</h2></div></a>
             <a href="#"><div class="user"><h2 class="nicname">usermail</h2>
                 <img src="img/arrow.png" alt="arrow"></div></a>
@@ -52,12 +52,6 @@
                     <h4>Пароль</h4>
                     <input type="password" placeholder="Введите пароль" name="name2" class="input">
                     <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
-                    <label class="check">
-                            <input type="checkbox">
-                            <span class="pseudocheckbox"></span>
-                            <p>Запомнить меня</p>
-                    </label>
-                    <h5 class="error_two">Неверный email или пароль</h5>
                 </div>
                 <button>Войти</button>
                 <h4 class="account">Еще нет аккаунта?</h4>
@@ -139,6 +133,7 @@
 
 
                 <script src="js/jquery.js"></script>
+                <script src="js/check_cookie.js"></script>
                 <script src="js/reg.js"></script>
                 <script src="js/entry.js"></script>
 

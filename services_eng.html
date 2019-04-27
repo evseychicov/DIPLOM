@@ -18,7 +18,7 @@
             <a href="index_eng.html"><h3 class="general">General</h3></a>
             <a href="services_eng.html"><h3>Services</h3></a>
             <a href="portfolio_eng.html"><h3>Portfolio</h3></a>
-            <a href="#" onclick="show('block')"><button>Create account</button></a>
+            <a href="#" onclick="show('block')"><button class="create_account">Create account</button></a>
             <a href="#" onclick="entry('block')"><div class="entry"><h2>Entry</h2></div></a>
             <a href="#"><div class="user"><h2 class="nicname">usermail</h2>
                 <img src="img/arrow.png" alt="arrow"></div></a>
@@ -61,12 +61,6 @@
                     <input type="text" placeholder="Enter Email" name="name1" class="input">
                     <h4>Password</h4>
                     <input type="password" placeholder="Enter password" name="name2" class="input">
-                    <label class="check">
-                            <input type="checkbox">
-                            <span class="pseudocheckbox"></span>
-                            <p>Remember me</p>
-                    </label>
-                    <h5 class="error_two">Incorrect email or password</h5>
                 </div>
                 <button>Entry</button>
                 <h4 class="account">No account yet?</h4>
@@ -148,6 +142,7 @@
 
 
                 <script src="js/jquery.js"></script>
+                <script src="js/check_cookie.js"></script>
                 <script src="js/reg.js"></script>
                 <script src="js/entry.js"></script>
 

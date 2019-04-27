@@ -189,7 +189,7 @@ ul.mmenuu_user > li:hover > ul.ssubmenuu_user {
 div.input{
     border-radius: 10px;
     background-color: #ffffff;
-    height: 420px;
+    height: 410px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     padding-left: 30px;
     padding-right: 30px;
@@ -313,7 +313,7 @@ div.input{
 div.input_entry{
     border-radius: 10px;
     background-color: #ffffff;
-    height: 380px;
+    height: 330px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     padding-left: 30px;
     padding-right: 30px;
