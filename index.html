@@ -17,9 +17,9 @@
             <a href="index.html"><h3 class="general">Главная</h3></a>
             <a href="services.html"><h3>Услуги</h3></a>
             <a href="portfolio.html"><h3>Портфолио</h3></a>
-            <a href="#" onclick="show('block')"><button>Создать аккаунт</button></a>
+            <a href="#" onclick="show('block')"><button class="create_account">Создать аккаунт</button></a>
             <a href="#" onclick="entry('block')"><div class="entry"><h2>Войти</h2></div></a>
-            <a href="#"><div class="user"><h2>usermail</h2>
+            <a href="#"><div class="user"><h2 class="nicname">usermail</h2>
             <img src="img/arrow.png" alt="arrow"></div></a>
             <a href="index_eng.html"><div id="lang" class="language">ru/en</div></a>
         </div>
@@ -47,9 +47,9 @@
                 <div class="input_entry">   
                     <h3>Вход</h3>
                     <h4>Email</h4>
-                    <input type="text" placeholder="Введите Email" name="name1" class="input">
+                    <input type="text" id="email_entry" placeholder="Введите Email" name="name1" class="input">
                     <h4>Пароль</h4>
-                    <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                    <input type="password" id="pass_entry" placeholder="Введите пароль" name="name2" class="input">
                     <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
                     <label class="check">
                             <input type="checkbox">
@@ -58,7 +58,7 @@
                     </label>
                     <h5 class="error_two">Неверный email или пароль</h5>
                 </div>
-                <button>Войти</button>
+                <button id="btn-entry">Войти</button>
                 <h4 class="account">Еще нет аккаунта?</h4>
                 <h3 onclick="show('block')" class="entr">Зарегистрироваться</h3>
             </form>
@@ -125,9 +125,9 @@
 
 
 
-    <script src="js/handlebars.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/reg.js"></script>
+    <script src="js/entry.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>
@@ -144,8 +144,6 @@
                 document.getElementById('gray_two').style.display = state; 
                 document.getElementById('form_reg').style.display = "none";	
                 document.getElementById('gray').style.display = "none";	
-                document.getElementById('form_recover').style.display = "none";	
-                document.getElementById('gray_three').style.display = "none"; 	
                 }
                 function feedback(state)
                 {

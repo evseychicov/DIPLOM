@@ -697,7 +697,7 @@ div.input_feedback{
         right: 0%;
     }
     .language{
-        top: 41.5%;
+        top: 43.5%;
         right: 5%;
         position: absolute;
     }
@@ -727,7 +727,7 @@ div.input_feedback{
         margin-left: 20px;
     }
     .user{
-        padding-top: 20px;
+        padding-top: 30px;
         float: right;
         cursor: pointer;
         display: flex;

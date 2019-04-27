@@ -21,8 +21,8 @@
             <a href="portfolio.html"><h3>Портфолио</h3></a>
             <a href="#" onclick="show('block')"><button>Создать аккаунт</button></a>
             <a href="#" onclick="entry('block')"><div class="entry"><h2>Войти</h2></div></a>
-            <a href="#"><div class="user"><h2>usermail</h2>
-            <img src="img/arrow.png" alt="arrow"></div></a>
+            <a href="#"><div class="user"><h2 class="nicname">usermail</h2>
+              <img src="img/arrow.png" alt="arrow"></div></a>
             <a href="portfolio_eng.html"><div id="lang" class="language">ru/en</div></a>
         </div>
     </header>
@@ -32,14 +32,14 @@
             <div class="input">   
                 <h3>Регистрация</h3>
                 <h4>Email</h4>
-                <input type="text" placeholder="Введите Email" name="name1" class="input">
+                <input id="email" type="text" placeholder="Введите Email" name="name1" class="input">
                 <h4>Пароль</h4>
-                <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                <input id="password" type="password" placeholder="Введите пароль" name="name2" class="input">
                 <h4>Подтвердите пароль</h4>
-                <input type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
+                <input id="password2" type="password" placeholder="Введите пароль еще раз" name="email1" class="input">
                 <h5 class="error">Такой e-mail уже зарегистрирован. Пароли не совпадают</h5>
             </div>
-            <button>Создать аккаунт</button>
+            <button id="btn-reg">Создать аккаунт</button>
             <h4 class="account">Уже есть аккаунт?</h4>
             <h3 onclick="entry('block')" class="entr">Войти</h3>
         </form>
@@ -218,6 +218,11 @@
                 var slider = multiItemSlider('.slider')
             
               </script>
+
+
+<script src="js/jquery.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/entry.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>

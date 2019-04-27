@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
     <title>PRAGMATIKA</title>
 </head>
 <body>
@@ -19,20 +20,9 @@
             <a href="portfolio_eng.html"><h3>Portfolio</h3></a>
             <a href="#" onclick="show('block')"><button>Create account</button></a>
             <a href="#" onclick="entry('block')"><div class="entry"><h2>Entry</h2></div></a>
-            <div class="user">
-                <ul class="mmenuu_user">
-                    <li><a href="#"><div class="flex_user">
-                        <h2>usermail</h2>
-                        <img src="img/arrow.png" alt="arrow">
-                        </div></a>
-                        <ul class="ssubmenuu_user">
-                            <li><a href="#" style="color: #0a1b4d">usermail@gmail.com</a></li>
-                            <li><a href="#" style="color: #f73e53">Выход</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <a href="index.html"><div id="lang" style="cursor: pointer;
+            <a href="#"><div class="user"><h2 class="nicname">usermail</h2>
+                <img src="img/arrow.png" alt="arrow"></div></a>
+            <a href="services.html"><div id="lang" style="cursor: pointer;
                 color: white;
                 font-size: 18px;
                 text-align: center;
@@ -51,14 +41,14 @@
             <div class="input">   
                 <h3>Registration</h3>
                 <h4>Email</h4>
-                <input type="text" placeholder="Enter Email" name="name1" class="input">
+                <input id="email" type="text" placeholder="Enter Email" name="name1" class="input">
                 <h4>Password</h4>
-                <input type="password" placeholder="Enter password" name="name2" class="input">
+                <input id="password" type="password" placeholder="Enter password" name="name2" class="input">
                 <h4>Confirm the password</h4>
-                <input type="password" placeholder="Enter password again" name="email1" class="input">
+                <input id="password2" type="password" placeholder="Enter password again" name="email1" class="input">
                 <h5 class="error">This e-mail is already registered. Passwords do not match</h5>
             </div>
-            <button>Create account</button>
+            <button id="btn-reg">Create account</button>
             <h4 class="account">Already have an account?</h4>
             <h3 onclick="entry('block')" class="entr">Entry</h3>
         </form>
@@ -146,7 +136,9 @@
 
 
 
-
+        <script src="js/jquery.js"></script>
+        <script src="js/reg.js"></script>
+        <script src="js/entry.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>
@@ -162,9 +154,7 @@
                 document.getElementById('form_entry').style.display = state;	
                 document.getElementById('gray_two').style.display = state; 
                 document.getElementById('form_reg').style.display = "none";	
-                document.getElementById('gray').style.display = "none";	
-                document.getElementById('form_recover').style.display = "none";	
-                document.getElementById('gray_three').style.display = "none"; 	
+                document.getElementById('gray').style.display = "none";	 	
                 }
                 function feedback(state)
                 {

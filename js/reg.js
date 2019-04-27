@@ -1,3 +1,4 @@
+// регистрация
 $("#btn-reg").on("click", function(e) {
     e.preventDefault();
     var email = $("#email").val();
