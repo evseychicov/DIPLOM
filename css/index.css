@@ -120,14 +120,16 @@ body{
 ul.ssubmenuu_user {
     position: absolute;
     width: 180px;
+    height: 30px;
     top: 45px;
-    right: 13.5%;
+    right: 16.5%;
     z-index: 150;
     /* Делаю субменю скрытыми. */
     display: none;
     /* Цвет — белый. */
     background-color: white;
-    border-radius: 10px;
+    border: 2px solid #D82525;
+    border-radius: 6px;
     text-decoration: none;
     text-align: center;
 }
@@ -143,6 +145,7 @@ ul.ssubmenuu_user > li > a {
     text-decoration: none;
     /* Задаю отступ. */
     padding: 5px;
+    font-size: 16px;
     /* Задаю цвет. */
     color: #0a1b4d;
     /* Еще цвет. */
@@ -150,7 +153,7 @@ ul.ssubmenuu_user > li > a {
     border-radius: 10px;
 }
 ul.ssubmenuu_user > li > a:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 ul.mmenuu_user > li{
     list-style-type: none;
@@ -693,7 +696,7 @@ div.input_feedback{
     ul.ssubmenuu_user {
         position: absolute;
         width: 180px;
-        top: 35px;
+        top: 48px;
         right: 0%;
     }
     .language{
