@@ -696,11 +696,11 @@ div.input_feedback{
     ul.ssubmenuu_user {
         position: absolute;
         width: 180px;
-        top: 48px;
+        top: 58px;
         right: 0%;
     }
     .language{
-        top: 43.5%;
+        top: 47.5%;
         right: 5%;
         position: absolute;
     }
@@ -730,7 +730,7 @@ div.input_feedback{
         margin-left: 20px;
     }
     .user{
-        padding-top: 30px;
+        padding-top: 40px;
         float: right;
         cursor: pointer;
         display: flex;
