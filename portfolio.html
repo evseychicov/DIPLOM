@@ -24,7 +24,7 @@
             <div class="user">
               <ul class="mmenuu_user">
                   <li><a href="#"><div class="flex_user">
-                      <h2 class="nicname">usermail</h2>
+                      <h2 id="user_name" class="nicname">usermail</h2>
                       <img src="img/arrow.png" alt="arrow">
                       </div></a>
                       <ul class="ssubmenuu_user">
@@ -66,7 +66,7 @@
                     <input type="password" placeholder="Введите пароль" name="name2" class="input">
                     <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
                 </div>
-                <button>Войти</button>
+                <button id="btn-entry">Войти</button>
                 <h4 class="account">Еще нет аккаунта?</h4>
                 <h3 onclick="show('block')" class="entr">Зарегистрироваться</h3>
             </form>
@@ -76,11 +76,11 @@
             <form class="comment" id="form_comment" action="index.html" name="f1">
                 <div class="input_comment">   
                     <h3>Комментарий</h3>
-                    <h4>Текст</h4>
-                    <input type="text" placeholder="Напишите комментарий" name="name1" class="input">
+                    <h4 id="comment_text">Текст</h4>
+                    <input id="comment_text" type="text" placeholder="Напишите комментарий" name="name1" class="input">
                     <h5 class="error_four">Вы не вошли в систему</h5>
                 </div>
-                <button>Добавить комментарий</button>
+                <button id="btn-comment">Добавить комментарий</button>
             </form>
             
 
@@ -230,6 +230,7 @@
     <script src="js/check_cookie.js"></script>
     <script src="js/reg.js"></script>
     <script src="js/entry.js"></script>
+    <script src="js/add_comment.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>
