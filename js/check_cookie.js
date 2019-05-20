@@ -14,8 +14,7 @@ $(document).ready(function(){
         $(".nicname").text(result);
     }
     else if(typeof result === 'undefined'){
-        $("#gray_two").css("display", "block");
-        $(".form_entry").css("display", "block");
+        
     } 
 
     $("#out").on("click", function(){
