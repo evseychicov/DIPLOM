@@ -71,9 +71,9 @@
                 <div class="input_entry">   
                     <h3>Entry</h3>
                     <h4>Email</h4>
-                    <input type="text" placeholder="Enter Email" name="name1" class="input">
+                    <input type="text" id="email_entry" placeholder="Enter Email" name="name1" class="input">
                     <h4>Password</h4>
-                    <input type="password" placeholder="Enter password" name="name2" class="input">
+                    <input type="password" id="pass_entry" placeholder="Enter password" name="name2" class="input">
                 </div>
                 <button id="btn-entry">Entry</button>
                 <h4 class="account">No account yet?</h4>
@@ -127,17 +127,15 @@
                 <h5>A huge number of positive comments speaks about our professionalism.</h5>
                 <a href="#" onclick="comment('block')"><button>Write</button></a>
             </div>
-            <div class="com">
-                <h4>usermail</h4>
-                <h6>Made the site quickly and on time</h6>
-            </div>
-            <div class="com">
-                <h4>usermail</h4>
-                <h6>Made the site quickly and on time</h6>
-            </div>
-            <div class="com">
-                <h4>usermail</h3>
-                <h6>Made the site quickly and on time</h6>
+            <div id="container">
+                <script id="new-tamplate" type="text/x-handlebars-template">
+                  {{#each news}}
+                    <div id="news" class="com">
+                        <h4>{{email}}</h4>
+                        <h6>{{comment}}</h6>
+                    </div>
+                       {{/each}}
+                  </script>
             </div>
         </div>
         
@@ -237,10 +235,12 @@
 
 
     <script src="js/jquery.js"></script>
+    <script src="js/handlebars.js"></script>
     <script src="js/check_cookie.js"></script>
     <script src="js/reg.js"></script>
     <script src="js/entry.js"></script>
     <script src="js/add_comment.js"></script>
+    <script src="js/show_comments.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>

@@ -40,7 +40,7 @@
     </header>
 
     <div onclick="show('none')" id="gray"></div>
-    <form class="registration" id="form_reg" action="index.html" name="f1">
+    <form class="registration" id="form_reg" action="" name="f1">
             <div class="input">   
                 <h3>Регистрация</h3>
                 <h4>Email</h4>
@@ -61,9 +61,9 @@
                 <div class="input_entry">   
                     <h3>Вход</h3>
                     <h4>Email</h4>
-                    <input type="text" placeholder="Введите Email" name="name1" class="input">
+                    <input type="text" id="email_entry" placeholder="Введите Email" name="name1" class="input">
                     <h4>Пароль</h4>
-                    <input type="password" placeholder="Введите пароль" name="name2" class="input">
+                    <input type="password" id="pass_entry" placeholder="Введите пароль" name="name2" class="input">
                     <!-- <p onclick="recover('block')">Забыли пароль?</p> -->
                 </div>
                 <button id="btn-entry">Войти</button>
@@ -118,17 +118,15 @@
                 <h5>Огромное количество положительных комментариев говорит о нашем профессионализме.</h5>
                 <a href="#" onclick="comment('block')"><button>Написать</button></a>
             </div>
-            <div class="com">
-                <h4>usermail</h4>
-                <h6>Сделали сайт быстро и в срок</h6>
-            </div>
-            <div class="com">
-                <h4>usermail</h4>
-                <h6>Сделали сайт быстро и в срок</h6>
-            </div>
-            <div class="com">
-                <h4>usermail</h3>
-                <h6>Сделали сайт быстро и в срок</h6>
+            <div id="container">
+                <script id="new-tamplate" type="text/x-handlebars-template">
+                  {{#each news}}
+                    <div id="news" class="com">
+                        <h4>{{email}}</h4>
+                        <h6>{{comment}}</h6>
+                    </div>
+                       {{/each}}
+                  </script>
             </div>
         </div>
         
@@ -227,10 +225,12 @@
 
 
     <script src="js/jquery.js"></script>
+    <script src="js/handlebars.js"></script>
     <script src="js/check_cookie.js"></script>
     <script src="js/reg.js"></script>
     <script src="js/entry.js"></script>
     <script src="js/add_comment.js"></script>
+    <script src="js/show_comments.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script>
