@@ -1,8 +1,10 @@
 // регистрация
 $("#btn-comment").on("click", function(e) {
     e.preventDefault();
-    var email = $("#user_name").val();
+    var email = getCookie("Email");
     var comment = $("#comment_text").val();
+    console.log(email);
+    console.log(comment);
         if (email != '' && comment != '') {
             $.ajax({
                 type: "POST",
