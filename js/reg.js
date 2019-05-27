@@ -4,6 +4,7 @@ $("#btn-reg").on("click", function(e) {
     var email = $("#email").val();
     var pass = $("#password").val();
     var pass2 = $("#password2").val();
+    var login = $("#login").val();
     var adr_pattern=/[0-9a-z_]+@[0-9a-z_]+\.[a-z]{2,5}/i;
     var prov = adr_pattern.test(email);
     if(prov == true){
@@ -14,7 +15,8 @@ $("#btn-reg").on("click", function(e) {
                 url: "php/registration.php",
                 data: {
                 email: email,
-                pass: pass
+                pass: pass,
+                login: login
                 },
                 success: function(msg) {
                 switch (msg) {

@@ -178,7 +178,7 @@ ul.mmenuu_user > li:hover > ul.ssubmenuu_user {
     overflow: auto; 
 } 
 .registration{
-    margin: 70px auto;
+    margin: 30px auto;
     z-index: 150;
     width: 328px;
     height: 480px;
@@ -192,7 +192,7 @@ ul.mmenuu_user > li:hover > ul.ssubmenuu_user {
 div.input{
     border-radius: 10px;
     background-color: #ffffff;
-    height: 410px;
+    height: 490px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     padding-left: 30px;
     padding-right: 30px;
@@ -286,7 +286,7 @@ div.input{
     overflow: auto; 
 } 
 .form_entry{
-    margin: 70px auto;
+    margin: 110px auto;
     z-index: 150;
     width: 328px;
     height: 480px;
@@ -882,7 +882,7 @@ div.input_feedback{
 }
 @media screen and (max-width:380px){
     .registration{
-        margin: 70px auto;
+        margin: 30px auto;
         z-index: 150;
         width: 91%;
         height: 480px;
@@ -904,7 +904,7 @@ div.input_feedback{
         color: white;
     }
     .form_entry{
-        margin: 70px auto;
+        margin: 110px auto;
         z-index: 150;
         width: 91%;
         height: 480px;
