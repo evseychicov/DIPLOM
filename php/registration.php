@@ -2,7 +2,6 @@
 
 include_once 'connection.php';
 
-$db = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($db));
 	$email = $_POST['email'];
 	$pass = $_POST['pass'];
 	$login = $_POST['login'];
