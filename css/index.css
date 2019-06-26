@@ -615,6 +615,7 @@ div.input_feedback{
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 .technology h3{
     padding-top: 30px;
@@ -634,8 +635,7 @@ div.input_feedback{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 .languages img{
     height: 120px;

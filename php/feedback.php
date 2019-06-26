@@ -6,7 +6,7 @@ $db = mysqli_connect($host, $user, $password, $database) or die("Ошибка " 
 	$name = $_POST['name'];
 	$phone = $_POST['phone'];
 
-	if(mysqli_query($db,"INSERT INTO feedback(phone_number, name_feedback) VALUES ('$name', '$phone')") === TRUE)
+	if(mysqli_query($db,"INSERT INTO feedback(phone_number, name_feedback) VALUES ('$phone', '$name')") === TRUE)
 	{
 	  echo 1;
 	}
